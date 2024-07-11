@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/birthday",
+    "/home",
+    "/mypage",
+    "/photos",
+    "/surprise",
+    "/videos"
+  ]
+}
