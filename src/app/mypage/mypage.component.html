@@ -1,0 +1,29 @@
+<div class="card-container">
+    <mat-card class="example-card" *ngFor="let card of cards">
+      <mat-card-content>
+        <div class="card-content">
+             
+          <ng-container *ngIf="!card.showButton; else buttonTemplate">
+            <div class="image-container">
+              <img [src]="card.image" [alt]="card.title" class="card-image">
+              <button mat-fab class="icon-button" (click)="toggleButton(card)">
+                <mat-icon>favorite</mat-icon>
+                           </button>
+              <p>Happy Birthday Nanu! I have something here that might make y<b>our</b> day even brighter.Touch my Heart :)</p>            
+            </div>
+          </ng-container>
+          <ng-template #buttonTemplate>
+            <div class="toggle-content">
+              <img [src]="card.toggleImage" [alt]="card.toggleText" class="toggle-image">
+              <div class="card-text">
+                <h3>{{ card.title }}</h3>
+                <p>{{ card.description }}</p>
+              </div>
+              <button (click)="redirectTo(card.path)">{{ card.toggleText }}</button>
+            </div>
+          </ng-template>
+        
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>

@@ -1,0 +1,10 @@
+<div class="card-container">
+    <div *ngFor="let number of numbers; let i = index" class="card">
+      <div class="card-content">
+        <img [src]="imageUrls[i]" alt="Image {{ number }}">
+        <p>{{ number }}</p>
+        <button (click)="onButtonClick(number)">Unwrap {{number}} </button>
+      </div>
+    </div>
+  </div>
+  

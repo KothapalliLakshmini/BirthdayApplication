@@ -1,0 +1,44 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+  .home-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #9ac49c; /* Set your desired background color */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .icon-button {
+    width: 130px;  /* Increase button width */
+    height: 130px; /* Increase button height */
+    font-size: 16px; /* Increase icon size */
+    background-color: rgba(239, 182, 182, 0.8); /* Light button background */
+    position: absolute;
+    top: 50%;  /* Vertically center the button */
+    right: 140px;  /* Position the button 20px from the right edge */
+    transform: translateY(-69%);
+  }
+  
+  .icon-button mat-icon {
+    font-size:24px;
+    
+    color: #961515; /* Icon color */
+  }
+
+  .button-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #2f275f;
+  }

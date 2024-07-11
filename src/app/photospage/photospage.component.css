@@ -1,0 +1,18 @@
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left;
+  }
+  
+  .photo {
+    flex: 0 1 200px; /* Adjust 200px to the desired size */
+    box-sizing: border-box;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 200px; /* Adjust 200px to the desired size */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    display: block;
+  }

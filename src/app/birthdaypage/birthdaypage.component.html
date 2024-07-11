@@ -1,0 +1,11 @@
+<div class="gif-container">
+    <img src="{{ gifUrl }}" alt="Birthday GIF">
+    <audio  #birthdayAudio [src]="audioUrl" controls hidden autoplay></audio>
+    </div>
+    <div>
+    <button mat-fab class="icon-button" (click)="navigate()">
+      <mat-icon>favorite</mat-icon>
+      <span class="button-label"> Touch Me </span>
+    </button>
+    
+  </div>
