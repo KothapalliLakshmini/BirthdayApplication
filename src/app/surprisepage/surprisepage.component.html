@@ -1,9 +1,11 @@
 <div class="card-container">
     <div *ngFor="let number of numbers; let i = index" class="card">
       <div class="card-content">
-        <img [src]="imageUrls[i]" alt="Image {{ number }}">
-        <p>{{ number }}</p>
-        <button (click)="onButtonClick(number)">Unwrap {{number}} </button>
+      
+        <img [src]="isRevealed[i] ?  giftImageUrls[i] : imageUrls[i]" alt="Image {{ number }}">
+       <p>{{ imageText[i] }}</p>
+      
+        <button (click)="onButtonClick(number)">{{ isRevealed[i] ? 'Hide' : 'Reveal' }}  </button>
       </div>
     </div>
   </div>

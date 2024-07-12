@@ -17,9 +17,7 @@ export class BirthdaypageComponent implements OnInit, AfterViewInit {
   @ViewChild('birthdayAudio') audioRef!: ElementRef<HTMLAudioElement>; // Reference to audio element with non-null assertion
 
 
-  constructor(private router: Router){
-    
-  }
+  constructor(private router: Router){}
 
   ngOnInit() {
  
